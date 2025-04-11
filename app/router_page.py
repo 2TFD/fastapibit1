@@ -14,7 +14,7 @@ async def home_page(request: Request):
 
 @router.post("/join_chat", response_class=HTMLResponse)
 async def join_chat(request: Request, username: str = Form(...), room_id: int = Form(...)):
-    # Простая генерация user_id
+    # генерация user_id
     user_id = random.randint(100, 100000)
     return templates.TemplateResponse("index.html",
                                       {"request": request,

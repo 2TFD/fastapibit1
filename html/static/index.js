@@ -2,7 +2,7 @@ const roomData = document.getElementById("room-data");
 const roomId = roomData.getAttribute("data-room-id");
 const username = roomData.getAttribute("data-username");
 const userId = roomData.getAttribute("data-user-id");
-
+// test
 const ws = new WebSocket(`ws://localhost:8000/ws/chat/${roomId}/${userId}?username=${username}`);
 
 ws.onopen = () => {
