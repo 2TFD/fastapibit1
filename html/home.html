@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в чат</title>
+</head>
+<body>
+<h1>Добро пожаловать в чат</h1>
+
+<form action="/join_chat" method="post">
+    <label >Введите ваше имя:</label>
+    <input type="text" name="username">
+    <label >Введите ID комнаты:</label>
+    <input type="number" name="room_id" required min="1">
+    <button type="submit">Войти в чат</button>
+</form>
+</body>
+</html>
